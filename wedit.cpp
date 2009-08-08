@@ -110,7 +110,7 @@ void WEdit::saveAs() {
 	QString documentsPath = QDir::homePath();
 	if(QDir(QDir::homePath() + QDir::separator() + tr("Documents") + QDir::separator()).exists()) documentsPath = QDir::homePath() + QDir::separator() + tr("Documents") + QDir::separator();
 	if(QDir(QDir::homePath() + QDir::separator() + tr("My Documents") + QDir::separator()).exists()) documentsPath = QDir::homePath() + QDir::separator() + tr("My Documents") + QDir::separator();
-	QString fileName = QFileDialog::getSaveFileName(this, tr("Save as..."), documentsPath, tr("All Files (*.*)"));
+	QString fileName = QFileDialog::getSaveFileName(this, tr("Save as..."), documentsPath, tr("All Files (*)"));
 	save(fileName);
 }
 
@@ -118,7 +118,7 @@ void WEdit::load() {
 	QString documentsPath = QDir::homePath();
 	if(QDir(QDir::homePath() + QDir::separator() + tr("Documents") + QDir::separator()).exists()) documentsPath = QDir::homePath() + QDir::separator() + tr("Documents") + QDir::separator();
 	if(QDir(QDir::homePath() + QDir::separator() + tr("My Documents") + QDir::separator()).exists()) documentsPath = QDir::homePath() + QDir::separator() + tr("My Documents") + QDir::separator();
-	QString fileName = QFileDialog::getOpenFileName(this, tr("Load..."), documentsPath, tr("All Files (*.*)"));
+	QString fileName = QFileDialog::getOpenFileName(this, tr("Load..."), documentsPath, tr("All Files (*)"));
 	load(fileName);
 }
 
