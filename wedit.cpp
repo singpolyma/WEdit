@@ -150,9 +150,7 @@ void WEdit::load(QString path) {
 		qDebug() << "File could not be read";
 	} else {
 		QTextStream stream(&file);
-		while(!stream.atEnd()) {
-			input->append(stream.readLine());
-		}
+		input->setPlainText(stream.readAll());
 		file.close();
 	}
 
