@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QTextEdit>
+#include <QTextBrowser>
 #include <QPushButton>
 
 class WEdit : public QWidget
@@ -24,7 +25,7 @@ public slots:
 private:
 	QString currentPath;
 	QTextEdit* input;
-	QTextEdit* output;
+	QTextBrowser* output;
 	QPushButton* newButton;
 	QPushButton* saveButton;
 	QPushButton* saveAsButton;

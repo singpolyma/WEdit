@@ -14,7 +14,8 @@ WEdit::WEdit(QWidget* parent) : QWidget(parent) {
 	input = new QTextEdit();
 	input->setAcceptRichText(false);
 
-	output = new QTextEdit();
+	output = new QTextBrowser();
+	output->setOpenExternalLinks(true);
 	output->setReadOnly(true);
 
 	newButton = new QPushButton(tr("&New"));
