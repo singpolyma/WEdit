@@ -1,0 +1,12 @@
+== Editor for wikitext. ==
+
+* Preview/view as you type
+* Load from file (dialog or command line argument)
+* Save to file
+
+== Building ==
+
+You need a QT4 build system.  Then run:
+
+./autogen.sh
+make
